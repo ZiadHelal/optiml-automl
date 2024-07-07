@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 FILE = Path(__file__).absolute().resolve()
 ROOT = FILE.parent
 OPENML_CACHE_DIR = ROOT / ".openml_cache"
-DEFAULT_DATADIR = ROOT / "data"
+DEFAULT_DATADIR = ROOT / "data" / "external"
 
 def openml_task_folds(
     openml_task_id: int,

@@ -11,8 +11,8 @@ from __future__ import annotations
 from pathlib import Path
 from sklearn.metrics import r2_score
 import numpy as np
-from optiml_automl.data import Dataset
-from optiml_automl.automl import AutoML
+from src.data import Dataset
+from src.automl import AutoML
 import argparse
 
 import logging
@@ -20,7 +20,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 FILE = Path(__file__).absolute().resolve()
-DATADIR = FILE.parent / "data"
+DATADIR = FILE.parent / "data" / "external"
 
 
 def main(
